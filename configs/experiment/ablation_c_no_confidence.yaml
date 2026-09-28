@@ -1,0 +1,6 @@
+base: [main.yaml]
+name: ablation_c_no_confidence
+output_dir: runs/ablation_c_no_confidence
+model:
+  rbm:
+    use_confidence: false

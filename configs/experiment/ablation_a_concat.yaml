@@ -1,0 +1,6 @@
+base: [main.yaml]
+name: ablation_a_concat
+output_dir: runs/ablation_a_concat
+model:
+  rbm:
+    fusion: concat

@@ -1,0 +1,7 @@
+base: [main.yaml]
+name: ablation_b_crossattn
+output_dir: runs/ablation_b_crossattn
+model:
+  rbm:
+    fusion: cross_attn
+    use_gating: false

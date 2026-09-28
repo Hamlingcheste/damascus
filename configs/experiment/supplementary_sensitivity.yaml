@@ -1,0 +1,10 @@
+base: [main.yaml]
+name: regbridge_sensitivity_optimal
+output_dir: runs/regbridge_sensitivity_optimal
+model:
+  tme:
+    num_layers: 6
+  rbm:
+    cross_dim: 256
+train:
+  lambda_conf: 0.1

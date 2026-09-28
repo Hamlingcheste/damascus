@@ -1,0 +1,6 @@
+base: [main.yaml]
+name: ablation_d_gru
+output_dir: runs/ablation_d_gru
+model:
+  tme:
+    variant: gru

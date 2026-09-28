@@ -1,0 +1,6 @@
+base: [main.yaml]
+name: ablation_e_no_ife_attn
+output_dir: runs/ablation_e_no_ife_attn
+model:
+  ife:
+    use_attention: false

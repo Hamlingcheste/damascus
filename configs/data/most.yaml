@@ -1,0 +1,14 @@
+data:
+  name: synthetic_most
+  task: kl5
+  num_train: 3026
+  num_val: 605
+  num_classes: 5
+  motion_features: 14
+  motion_seq_len: 32
+  image_size: 224
+  image_channels: 3
+  motion_noise: 1.0
+  imaging_noise: 1.2
+  domain_shift: 0.5
+  seed: 47

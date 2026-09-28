@@ -1,0 +1,30 @@
+model:
+  num_classes: 3
+  embed_dim: 256
+  tme:
+    in_features: 12
+    seq_len: 256
+    model_dim: 128
+    num_layers: 4
+    kernel_size: 3
+    num_heads: 8
+    dropout: 0.2
+    positional: true
+    variant: tcn
+  ife:
+    in_channels: 4
+    pretrained: false
+    attn_reduction: 16
+    spatial_kernel: 7
+    dropout: 0.2
+    use_attention: true
+    backbone: densenet201
+  rbm:
+    cross_dim: 256
+    use_confidence: true
+    use_gating: true
+    fusion: bilinear
+    bilinear_directions: 2
+  head:
+    hidden_dim: 256
+    dropout: 0.3

@@ -1,0 +1,14 @@
+data:
+  name: synthetic_oai
+  task: kl5
+  num_train: 4796
+  num_val: 960
+  num_classes: 5
+  motion_features: 14
+  motion_seq_len: 32
+  image_size: 224
+  image_channels: 3
+  motion_noise: 1.0
+  imaging_noise: 1.0
+  domain_shift: 0.0
+  seed: 42

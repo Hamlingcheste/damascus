@@ -1,0 +1,8 @@
+base:
+  - ../model/regbridge_oai.yaml
+  - ../data/most.yaml
+  - ../train/adamw_cosine.yaml
+name: regbridge_most_cross_dataset
+seed: 42
+device: auto
+output_dir: runs/regbridge_most_cross_dataset

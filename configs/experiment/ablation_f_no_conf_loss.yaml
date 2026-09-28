@@ -1,0 +1,5 @@
+base: [main.yaml]
+name: ablation_f_no_conf_loss
+output_dir: runs/ablation_f_no_conf_loss
+train:
+  lambda_conf: 0.0

@@ -1,0 +1,60 @@
+# for unit-test smoke only; do not use for reporting
+name: smoke
+seed: 0
+device: cpu
+output_dir: runs/smoke
+model:
+  num_classes: 4
+  embed_dim: 48
+  tme:
+    in_features: 14
+    seq_len: 12
+    model_dim: 32
+    num_layers: 2
+    kernel_size: 3
+    num_heads: 4
+    dropout: 0.0
+    positional: true
+    variant: tcn
+  ife:
+    in_channels: 3
+    pretrained: false
+    attn_reduction: 8
+    spatial_kernel: 7
+    dropout: 0.0
+    use_attention: true
+    backbone: densenet121
+  rbm:
+    cross_dim: 32
+    use_confidence: true
+    use_gating: true
+    fusion: bilinear
+  head:
+    hidden_dim: 32
+    dropout: 0.0
+data:
+  name: synthetic_oai
+  task: kl5
+  num_train: 16
+  num_val: 12
+  num_classes: 4
+  motion_features: 14
+  motion_seq_len: 12
+  image_size: 64
+  image_channels: 3
+  seed: 0
+train:
+  epochs: 1
+  batch_size: 4
+  lr: 1.0e-3
+  weight_decay: 1.0e-2
+  warm_restart_t0: 5
+  warm_restart_tmult: 2
+  early_stop_patience: 5
+  label_smoothing: 0.1
+  lambda_conf: 0.1
+  aux_weight: 1.0
+  amp: false
+  num_folds: 1
+  num_workers: 0
+  max_steps: 2

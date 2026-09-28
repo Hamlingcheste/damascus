@@ -1,0 +1,14 @@
+data:
+  name: synthetic_gaitoa
+  task: gait3
+  num_train: 1356
+  num_val: 272
+  num_classes: 3
+  motion_features: 12
+  motion_seq_len: 256
+  image_size: 224
+  image_channels: 4
+  motion_noise: 1.0
+  imaging_noise: 1.0
+  domain_shift: 0.0
+  seed: 44

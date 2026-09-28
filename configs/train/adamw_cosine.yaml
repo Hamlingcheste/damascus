@@ -1,0 +1,17 @@
+train:
+  epochs: 120
+  batch_size: 64
+  lr: 3.0e-4
+  weight_decay: 1.0e-2
+  warm_restart_t0: 10
+  warm_restart_tmult: 2
+  early_stop_patience: 15
+  label_smoothing: 0.1
+  lambda_conf: 0.1
+  aux_weight: 1.0
+  amp: true
+  grad_clip: null
+  ema_decay: null
+  num_folds: 5
+  num_workers: 0
+  max_steps: null

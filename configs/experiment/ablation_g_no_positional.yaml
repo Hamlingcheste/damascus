@@ -1,0 +1,6 @@
+base: [main.yaml]
+name: ablation_g_no_positional
+output_dir: runs/ablation_g_no_positional
+model:
+  tme:
+    positional: false
